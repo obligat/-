@@ -1,0 +1,13 @@
+
+<!--pages/feedback/feedback.wxml-->
+<import src="../../src/wetoast/wetoast.wxml" />
+<view class="container">
+  <form bindsubmit="bindFormSubmit">
+    <textarea class="textarea-box main-font-color " bindinput="bindInput" name="textarea" placeholder-class="sub-font-color" maxlength="-1" auto-height value="{{inputValue}}" placeholder="把你对小畅的吐槽写下来吧" />
+    <!--<button form-type="submit">
+      <image src="../../images/send.png" class="{{inputValue?'':'grey-image'}}"></image>
+    </button>-->
+    <button class="send {{inputValue?'':'grey-image'}}" form-type="submit" ></button>
+  </form>
+</view>
+<template is="wetoast" data="{{...__wetoast__}}" />

@@ -1,0 +1,24 @@
+<!--pages/emptyRoom/emptyRoom.wxml-->
+<view class="container">
+  <view class="wrapper">
+    <view class="{{week==1?'underline':'no-underline'}}" bindtap="handleWeek1">周一</view>
+    <view class="{{week==2?'underline':'no-underline'}}" bindtap="handleWeek2">周二</view>
+    <view class="{{week==3?'underline':'no-underline'}}" bindtap="handleWeek3">周三</view>
+    <view class="{{week==4?'underline':'no-underline'}}" bindtap="handleWeek4">周四</view>
+    <view class="{{week==5?'underline':'no-underline'}}" bindtap="handleWeek5">周五</view>
+  </view>
+  <view class="room-title sub-font-color">
+    <view>西区</view>
+    <view>东区</view>
+  </view>
+  <view class="room-body main-font-color">
+    <view class="room-item" wx:for="{{rooms}}" wx:key="index">
+      <view class="room-no sub-font-color">{{item.no}}</view>
+      <view class="room-west">
+        <view class="">{{item.westRoomA}}</view>
+        <view class="roomB">{{item.westRoomB}}</view>
+      </view>
+      <view class="room-east">{{item.eastRoom}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,131 @@
+/**app.wxss**/
+@import "src/wetoast/wetoast.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.wrapper {
+  background: #67d5ff;
+  height: 100rpx;
+  width: 100%;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  background: #67d5ff;
+  color: #fff;
+  margin: 30rpx 20rpx 20rpx 20rpx;
+  padding: 0 10rpx;
+  font-size: 34rpx;
+}
+
+.search-box > input {
+  flex: 1;
+}
+
+.h1 {
+  font-size: 64rpx;
+}
+
+.h2 {
+  font-size: 48rpx;
+}
+
+.h3 {
+  font-size: 40rpx;
+}
+
+.h4 {
+  font-size: 34rpx;
+}
+
+.h5 {
+  font-size: 28rpx;
+}
+
+.h6 {
+  font-size: 22rpx;
+}
+
+.main-font-color {
+  color: #353535;
+}
+
+.sub-font-color {
+  color: #95989a;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.icon-cancel {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+}
+
+.input-placeholder {
+  color: #aaa;
+  font-size: 28rpx;
+}
+
+.input-box {
+  display: flex;
+  border-bottom: 2rpx solid black;
+  margin-top: 48rpx;
+  padding: 0 10rpx;
+  align-items: center;
+}
+
+.error-massage {
+  color: red;
+  font-size: small;
+  margin-top: 10rpx;
+  padding-left: 10rpx;
+}
+
+.red-line {
+  border-bottom: 1px solid red;
+}
+
+.btn-login {
+  width: 320rpx;
+  height: 70rpx;
+  margin-top: 160rpx;
+  margin-bottom: 80rpx;
+  color: #fff;
+  background: rgba(103, 213, 255, 0.8);
+  line-height: 70rpx;
+  border-radius: 50rpx;
+}
+
+.button-hover {
+  background: rgba(103, 213, 255, 0.6);
+}
+
+button::after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.grey-image {
+  filter: grayscale(100%);
+}
+
+.color-image{
+  filter: brightness(0.5);
+}

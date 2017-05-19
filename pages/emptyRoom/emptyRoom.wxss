@@ -1,0 +1,69 @@
+/* pages/emptyRoom/emptyRoom.wxss */
+
+.container {
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  height: 90rpx;
+  font-size: 28rpx;
+}
+
+.wrapper > view {
+  text-align: center;
+  flex: 1;
+  line-height: 85rpx;
+}
+
+.no-underline {
+  border-bottom: 6rpx solid transparent;
+}
+
+.underline {
+  border-bottom: 6rpx solid #fff;
+}
+
+.room-title {
+  font-size: 36rpx;
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.room-title > view:nth-child(1) {
+  width: 295rpx;
+  padding-left: 140rpx;
+}
+
+.room-title > view:nth-child(2) {
+  flex: 1;
+}
+
+.room-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-item {
+  display: flex;
+}
+
+.room-no {
+  width: 108rpx;
+  margin: 24rpx 0 auto 34rpx;
+  font-size: 40rpx;
+}
+
+.room-west, .room-east {
+  font-size: 26rpx;
+  display: block;
+  width: 270rpx;
+  word-wrap: break-word;
+  margin: 24rpx;
+  margin-left: 0;
+}

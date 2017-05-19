@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="wrapper">
+    <view class="search-box">
+      <input placeholder="搜索图书" placeholder-class="input-placeholder" value="{{searchInput}}" bindinput="handleKeyInput" bindconfirm="handConfirmSearch" />
+      <!--<view class="icon-cancel" style="opacity:{{searchInput?opacity:''}}" bindtap="clearSearchInput">X</view>-->
+      <image src="../../images/cross.png" class="icon-cancel" style="opacity:{{searchInput?opacity:''}}" bindtap="clearSearchInput"></image>
+    </view>
+  </view>
+  <view class="btn-group">
+    <button hover-class="button-hover" bindtap="handleEmptyRoom">无课教室</button>
+    <button hover-class="button-hover" bindtap="handleYellowpage">西邮黄页</button>
+    <button hover-class="button-hover" bindtap="handleBorrow">借阅查询</button>
+  </view>
+  <view class="class-table">
+    <view class="no-class-table" wx:if="{{!username}}">
+      <view class="h3 sub-font-color title">课程表</view>
+      <image style=" width:398rpx;height:295rpx;" src="../../images/smail.png" mode="aspectFit"></image>
+      <button class="btn-login" bindtap="handleLogin">
+        立即登录
+      </button>
+      <view class="h4 sub-font-color">登录后才能查看课表哦^_^
+      </view>
+    </view>
+    <block wx:if="{{!username && courseMessage}}">
+      <swiper current="{{current}}" bindchange="handleSwiper">
+        <block wx:for="{{courseMessage}}" wx:for-item="week" wx:for-index="day" wx:key="num">
+          <swiper-item>
+            <view class="swiper-item">
+              <view class="table-head" style="background:linear-gradient(30deg,{{current?gradients[current-1]:'#32b8d5'}},{{gradients[current]}});">
+                <image src="{{images[current]}}" mode="aspectFit"></image>
+                <view class="week-num">星期{{weekNum[current]}}</view>
+              </view>
+              <view class="table-body">
+                <block wx:for="{{week}}" wx:key="">
+                  <block wx:if="{{index < 4}}">
+                    <view class="tr">
+                      <view class="table-number h3 main-font-color">{{2*index+1}}-{{2*index+2}}</view>
+                      <view class="item">
+                        <view class="class-name h5 main-font-color">{{item.S_Name?item.S_Name:'无课'}}</view>
+                        <view>
+                          <text class="room-num h6 sub-font-color">{{item.RoomNum}} </text>
+                          <text class="h6 sub-font-color">{{item.Teach_Name}}</text>
+                        </view>
+                      </view>
+                    </view>
+                  </block>
+                </block>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </block>
+    <view class="no-class-table" wx:if="{{username &&!courseMessage}}">
+      <view class="h3 sub-font-color title">课程表</view>
+      <image style=" width:398rpx;height:295rpx;" src="../../images/smail.png" mode="aspectFit"></image>
+      <view class="h4 sub-font-color sorry">抱歉，暂时无法提供服务
+      </view>
+    </view>
+  </view>
+</view>

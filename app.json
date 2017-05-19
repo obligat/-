@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/emptyRoom/emptyRoom",
+    "pages/yellowpage/yellowpage",
+    "pages/feedback/feedback",
+    "pages/bookDetail/bookDetail",
+    "pages/loginZhiHuiClass/loginZhiHuiClass",
+    "pages/loginLibrary/loginLibrary",
+    "pages/bookList/bookList",
+    "pages/usercenter/usercenter",
+    "pages/borrow/borrow",
+    "pages/library/library"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#67d5ff",
+    "navigationBarTitleText": "畅校园",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "selectedColor": "#67d5ff",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home_inactive.png",
+        "selectedIconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/usercenter/usercenter",
+        "text": "我的",
+        "iconPath": "images/mine_inactive.png",
+        "selectedIconPath": "images/mine.png"
+      }
+    ]
+  }
+}

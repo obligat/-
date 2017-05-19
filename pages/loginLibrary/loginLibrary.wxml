@@ -1,0 +1,22 @@
+<!--pages/loginLibrary/loginLibrary.wxml-->
+<import src="../../src/wetoast/wetoast.wxml" />
+<view class="container">
+  <view class="h3 main-font-color">登录图书馆系统</view>
+  <form bindsubmit="formSubmit">
+    <view class="input-box {{errorMsg?'red-line':''}}">
+      <input name="username" type="text" placeholder="学号" placeholder-class="input-placeholder" focus maxlength="10" value="{{username}}" bindinput="bindUsernameInput" />
+      <image src="../../images/cross.png" class="color-image icon-cancel {{username?'': 'hidden'}}" bindtap="clearUsernameInput"></image>
+    </view>
+    <view class="input-box {{errorMsg?'red-line':''}}">
+      <input name="password" type="password" placeholder-class="input-placeholder" placeholder="密码" value="{{password}}" bindinput="bindPasswordInput" value="{{password}}" />
+      <!--<view class="icon-cancel {{password ? '' : 'hidden'}}" bindtap="clearPasswordInput">X</view>-->
+       <image src="../../images/cross.png" class="color-image icon-cancel {{password?'': 'hidden'}}" bindtap="clearPasswordInput"></image>
+    </view>
+    <view class="error-massage {{errorMsg?'':'hidden'}}">账号或密码错误</view>
+    <button class="btn-login" hover-class="button-hover" formType="submit">登录</button>
+  </form>
+  <view class="tips sub-font-color">
+    <text>13、14级账号为S+学号，密码为123456</text>
+    <text>15、16级账号为学号，密码为学号后六位</text>
+  </view>
+</view>

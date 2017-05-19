@@ -1,0 +1,96 @@
+/* pages/borrow/borrow.wxss */
+
+.container {
+  align-items: center;
+}
+
+.sno {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 84%;
+  height: 160rpx;
+  margin-top: 32rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  position: relative;
+  border-radius: 16rpx;
+  box-shadow: 0 3rpx 6rpx rgba(87, 87, 87, 0.4);
+}
+
+.sno > view {
+  margin-right: 360rpx;
+}
+
+.btn-logout {
+  background: #e56360;
+  color: #fff;
+  height: 60rpx;
+  width: 120rpx;
+  font-size: 26rpx;
+}
+
+.button-hover {
+  background: rgba(229, 99, 96, 0.6);
+}
+
+.btn-renew {
+  position: absolute;
+  color: #fff;
+  height: 60rpx;
+  width: 120rpx;
+  font-size: 26rpx;
+  right: 30rpx;
+}
+
+.title {
+  position: absolute;
+  left: 30rpx;
+  top: 240rpx;
+  font-size: 36rpx;
+}
+
+.borrow-list {
+  width: 92%;
+  margin-top: 90rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.borrow-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16rpx;
+}
+
+.borrow-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 32rpx 0;
+}
+
+.borrow-info-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 450rpx;
+}
+
+.btn-renew, .btn-not-renew {
+  background: #67d5ff;
+  right: 0;
+}
+
+.btn-not-renew {
+  position: absolute;
+  background: rgba(103, 213, 255, 0.8);
+  color: #fff;
+  height: 60rpx;
+  width: 160rpx;
+  font-size: 26rpx;
+}
+
+.main-font-color {
+  font-size: 32rpx;
+}
