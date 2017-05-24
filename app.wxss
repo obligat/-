@@ -83,7 +83,7 @@
 
 .input-box {
   display: flex;
-  border-bottom: 2rpx solid black;
+  border-bottom: 2rpx solid #95989a;
   margin-top: 48rpx;
   padding: 0 10rpx;
   align-items: center;
@@ -106,13 +106,17 @@
   margin-top: 160rpx;
   margin-bottom: 80rpx;
   color: #fff;
-  background: rgba(103, 213, 255, 0.8);
+  background: rgba(103, 213, 255, 0.6);
   line-height: 70rpx;
   border-radius: 50rpx;
 }
 
-.button-hover {
+/*.button-hover {
   background: rgba(103, 213, 255, 0.6);
+}*/
+
+.btn-can{
+    background: rgba(103, 213, 255, 1);
 }
 
 button::after {

@@ -95,6 +95,8 @@ Page({
             "content-type": "application/x-www-form-urlencoded"
           },
           success: function (res) {
+            console.log('--------')
+            console.log(res)
             if (res.data.Obj) {
               var filterResult = sort.filterByWeekNum(res.data.Obj)
               var sortResult = sort.sortByJT_NO(filterResult)

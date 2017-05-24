@@ -47,7 +47,8 @@
   width: 600rpx;
   height: 800rpx;
   border-radius: 16rpx;
-  box-shadow: 0 40rpx 40rpx -20rpx rgba(87, 87, 87, 0.4);
+ /* box-shadow: 0 32rpx 40rpx -32rpx rgba(87, 87, 87, 0.3);*/
+  box-shadow: 0 24rpx 48rpx -32rpx rgba(87, 87, 87, 1);
   margin: 0 auto 20rpx;
 }
 
@@ -74,6 +75,7 @@
 
 .sorry {
   margin-top: 110rpx;
+  margin-bottom: 30rpx;
 }
 
 swiper {
@@ -89,7 +91,7 @@ swiper {
   width: 600rpx;
   height: 800rpx;
   border-radius: 16rpx;
-  box-shadow: 0 8rpx 16rpx rgba(87, 87, 87, 0.4);
+  box-shadow: 0 24rpx 24rpx -24rpx rgba(87, 87, 87, 0.2);
   margin: 0 auto;
 }
 

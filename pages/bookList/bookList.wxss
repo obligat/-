@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.wrapper{
+.wrapper {
   position: fixed;
   z-index: 100;
 }
@@ -29,7 +29,7 @@
   width: 690rpx;
   height: 80rpx;
   border-radius: 8rpx;
-  box-shadow: 0 3rpx 6rpx rgba(87, 87, 87, 0.4);
+  box-shadow: 0 16rpx 16rpx -12rpx rgba(87, 87, 87, 0.2);
   display: flex;
   align-items: center;
   color: #95989a;
@@ -110,4 +110,9 @@
   border-radius: 50%;
   background: url(http://m.dev.vd.cn/static/xcx/v1/goo/w_2-3451cc437e.png) no-repeat center -1110px;
   -webkit-background-size: 50px auto;
+}
+
+.tip {
+  margin-top: -24rpx;
+  margin-bottom: 32rpx;
 }

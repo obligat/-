@@ -39,6 +39,11 @@ Page({
               allPages: res.data.allpage,
               all: res.data.all
             })
+          } else {
+            that.wetoast.toast({
+              title: '没有找到您要找的书',
+              duration: 1000
+            })
           }
         }
       })
@@ -85,10 +90,10 @@ Page({
         }
       })
     } else {
-      this.wetoast.toast({
-        title: '总共 ' + this.data.all + ' 条记录，您都看完啦',
-        duration: 2000
-      })
+      // this.wetoast.toast({
+      //   title: '总共 ' + this.data.all + ' 条记录，您都看完啦',
+      //   duration: 2000
+      // })
     }
   },
   onLoad: function (options) {

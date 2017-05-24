@@ -15,10 +15,10 @@
     <view class="time-tip" wx:else>
       图书馆已闭馆（{{isWeekDay?'14:00 ':'8:00 '}}开馆）
     </view>
-    <image class="cancel-tip" bindtap="hiddenTip" src="../../images/cancel.png" mode="aspectFit"></image>
+    <!--<image class="cancel-tip" bindtap="hiddenTip" src="../../images/cancel.png" mode="aspectFit"></image>-->
   </view>
   <view class="book-list">
-    <block wx:for="{{books}}" wx:key="index">
+    <block wx:for="{{books}}" wx:key="index" wx:if="{{books.length}}">
       <navigator url="../bookDetail/bookDetail?title={{item.title}}&author={{item.author}}&searchId={{item.searchId}}&on={{item.on}}&allNum={{item.allNum}}&year={{item.year}}&press={{item.press}}" class="book-item">
         <image src=""></image>
         <view class="book-info">
@@ -28,6 +28,8 @@
         </view>
       </navigator>
     </block>
+    <!--<view class="" wx:if="{{!books.length}}">没有该本书</view>-->
   </view>
+  <view class="tip sub-font-color h6" wx:if="{{page >= allPages && all}}"> 共 {{all}} 本书，您都看完了</view>
 </view>
 <template is="wetoast" data="{{...__wetoast__}}" />

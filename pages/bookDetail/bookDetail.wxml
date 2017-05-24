@@ -2,14 +2,14 @@
 <!--pages/bookDetail/bookDetail.wxml-->
 <view class="container sub-font-color">
   <view class="head-card">
-    <image src=""></image>
-    <view class="head-card-content h6">
-      <text class="head-card-title main-font-color h5">{{bookDetail.title}}
+    <!--<image src=""></image>-->
+    <view class="head-card-content h5">
+      <text class="head-card-title main-font-color h4">{{bookDetail.title}}
       </text>
       <text class="author">{{bookDetail.author}}</text>
       <view>长安校区：共 {{bookDetail.allNum}} 本， {{bookDetail.on}} 本可借</view>
       <view>
-        <text class="search-id">{{bookDetail.searchId}}</text>
+        <text class="search-id">索书号：{{bookDetail.searchId}}</text>
         <view class="shuku">{{shuku}}</view>
       </view>
     </view>
@@ -20,8 +20,9 @@
   </view>
   <view class="summary h5">
     <view>简介：</view>
-    <view class="summary-contant">
+    <!--<view class="summary-contant">
       <view class="p" wx:for="{{summary}}">{{item}}</view>
-    </view>
+    </view>-->
+    <view class="summary-contant">暂无简介</view>
   </view>
 </view>

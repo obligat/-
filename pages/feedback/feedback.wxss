@@ -5,10 +5,10 @@
   min-height: 380rpx;
   max-height: auto;
   background: #fff;
-  border: 1px solid beige;
+  border: 1px solid #fff;
   margin: 32rpx 30rpx 0 30rpx;
-  box-shadow: 0 8rpx 16rpx rgba(99, 99, 99, 0.2);
-  border-radius: 10rpx;
+  box-shadow: 0 32rpx 40rpx -32rpx rgba(87, 87, 87, 0.3);
+  border-radius: 8rpx;
   padding: 32rpx 30rpx;
   line-height: 80rpx;
 }
@@ -17,7 +17,7 @@ button {
   width: 90rpx;
   height: 90rpx;
   position: relative;
-  margin-top: -50rpx;
+  margin-top: -45rpx;
   margin-left: 75%;
   border-radius: 50%;
   box-shadow: 0 0 6rpx rgba(87, 87, 87, 0.4);

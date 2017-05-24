@@ -31,7 +31,7 @@
   font-size: 36rpx;
   display: flex;
   height: 80rpx;
-  line-height: 80rpx;
+  line-height: 94rpx;
 }
 
 .room-title > view:nth-child(1) {

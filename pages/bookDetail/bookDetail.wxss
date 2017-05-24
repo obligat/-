@@ -3,7 +3,7 @@
 .container {
   padding: 32rpx 30rpx;
   height: 100%;
-  position: relative;
+  /*position: relative;*/
 }
 
 .head-card {
@@ -11,7 +11,7 @@
   margin-bottom: 48rpx;
   display: flex;
   border-radius: 8rpx;
-  box-shadow: 0 3rpx 6rpx rgba(87, 87, 87, 0.4);
+  box-shadow: 0 32rpx 40rpx -32rpx rgba(87, 87, 87, 0.3);
 }
 
 .head-card image {
@@ -24,10 +24,11 @@
 .head-card-content {
   display: flex;
   flex-direction: column;
+  margin: 32rpx;
 }
 
 .head-card-title {
-  margin: 20rpx auto 24rpx 0;
+  margin: 0 auto 24rpx 0;
 }
 
 .author {
@@ -35,14 +36,13 @@
 }
 
 .search-id {
-  width: 278rpx;
+  width: 430rpx;
 }
 
 .head-card-content > view:nth-child(4) {
   display: flex;
   align-items: center;
   margin-top: 16rpx;
-  margin-bottom: 20rpx;
 }
 
 .press {
