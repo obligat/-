@@ -1,11 +1,10 @@
-
 <!--pages/yellowpage/yellowpage.wxml-->
 <view class="container">
   <view class="wrapper">
     <view class="search-box">
       <input placeholder="输入关键字以快速匹配" placeholder-class="input-placeholder" value="{{searchInput}}" bindinput="handleKeyInput" />
       <!--<view class="icon-cancel" style="opacity:{{searchInput?opacity:''}}" bindtap="clearSearchInput">X</view>-->
-        <image src="../../images/cross.png" class="icon-cancel" style="opacity:{{searchInput?opacity:''}}" bindtap="clearSearchInput"></image>
+      <image src="../../images/cross.png" class="icon-cancel" style="opacity:{{searchInput?opacity:''}}" bindtap="clearSearchInput"></image>
     </view>
   </view>
   <view class="choose-btn">
@@ -20,7 +19,7 @@
           <view class="table-item main-font-color {{item.weixin?'weixin-item':''}} " wx:for="{{matchedXuriyuan}}" wx:key="index">
             <view class="match-name">{{item.name}}</view>
             <view>
-              <view>电话：{{item.tel}}</view>
+              <view bindtap="handlePhoneCall" data-phone="{{item.tel}}">电话：{{item.tel}}</view>
               <view class="weixin" wx:if="{{item.weixin}}">微信：{{item.weixin}}</view>
             </view>
           </view>
@@ -30,7 +29,7 @@
           <view class="table-item main-font-color {{item.weixin?'weixin-item':''}}" wx:for="{{matchedMeishisquare}}" wx:key="index">
             <view class="match-name">{{item.name}}</view>
             <view>
-              <view>电话：{{item.tel}}</view>
+              <view bindtap="handlePhoneCall" data-phone="{{item.tel}}">电话：{{item.tel}}</view>
               <view class="weixin" wx:if="{{item.weixin}}">微信：{{item.weixin}}</view>
             </view>
           </view>
@@ -45,7 +44,7 @@
           <view class="table-item main-font-color {{item.weixin?'weixin-item':''}}">
             <view class="table-name">{{item.name}}</view>
             <view>
-              <view>电话：{{item.tel}}</view>
+              <view bindtap="handlePhoneCall" data-phone="{{item.tel}}">电话：{{item.tel}}</view>
               <view class="weixin" wx:if="{{item.weixin}}">微信：{{item.weixin}}</view>
             </view>
           </view>
@@ -55,7 +54,7 @@
           <view class="table-item main-font-color {{item.weixin?'weixin-item':''}}">
             <view class="table-name">{{item.name}}</view>
             <view>
-              <view>电话：{{item.tel}}</view>
+              <view bindtap="handlePhoneCall" data-phone="{{item.tel}}">电话：{{item.tel}}</view>
               <view class="weixin" wx:if="{{item.weixin}}">微信：{{item.weixin}}</view>
             </view>
           </view>

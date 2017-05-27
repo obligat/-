@@ -60,6 +60,11 @@ Page({
       matchedPhoneInfo
     })
   },
+  handlePhoneCall(e) {
+    wx.makePhoneCall({
+      phoneNumber: e.target.dataset.phone
+    })
+  },
   clearSearchInput() {
     this.setData({
       searchInput: ''
